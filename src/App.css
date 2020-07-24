@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 40em;
+  margin-top: 3em;
+}
+
+header {
+  background-color: #04213b;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 0.7em 0;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input-group input {
+  border: none;
+  margin-left: 1.5em;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.input-group input::-webkit-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.input-group input:-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.input-group input::-ms-input-placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.input-group input::placeholder {
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.input-group i {
+  background-color: green;
+  padding: 1em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task:nth-child(odd) {
+  background-color: #019499;
+}
+
+.task:nth-child(odd) .check-group label {
+  color: white;
+}
+
+.task:nth-child(even) {
+  background-color: #c7e6e7;
+}
+
+.task:nth-child(even) .check-group label {
+  color: #019499;
+}
+
+.task .check-group label {
+  text-transform: capitalize;
+}
+
+.task .check-group-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.task .check-group-btns i {
+  display: block;
+  width: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  color: white;
+}
+
+.task .check-group-btns .edit {
+  background-color: green;
+}
+
+.task .check-group-btns .trash {
+  background-color: red;
 }
