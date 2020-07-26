@@ -161,14 +161,20 @@ header h1 {
 }
 
 .task .check-group-btns .edit {
-  background-color: #037678;
-  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.1), -0.2em -0.2em 0.3em rgba(255,255,255,0.2);
+  /* background-color: #037678; */
+  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.1),
+            -0.2em -0.2em 0.3em rgba(255,255,255,0.2),
+            inset 0.2em 0.2em 0.3em rgba(0,0,0,0.1),
+            inset -0.2em -0.2em 0.3em rgba(255,255,255,0.2);
   border-radius: 50%;
 }
 
 .task .check-group-btns .trash {
-  background-color: #0bb5b8;
-  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.1), -0.2em -0.2em 0.3em rgba(255,255,255,0.2);
+  /* background-color: #0bb5b8; */
+  box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.1),
+           -0.2em -0.2em 0.3em rgba(255,255,255,0.2),
+           inset 0.2em 0.2em 0.3em rgba(0,0,0,0.1),
+           inset -0.2em -0.2em 0.3em rgba(255,255,255,0.2);
   margin-left: 0.5em;
   border-radius: 50%;
 }
