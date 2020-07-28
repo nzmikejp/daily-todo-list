@@ -33,13 +33,9 @@ header h1 {
   padding: 0.7em 0;
 }
 
-.input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.input-body {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0.5em;
   position: relative;
   z-index: 50;
@@ -47,9 +43,24 @@ header h1 {
   background-color: white;
 }
 
+.input-group {
+  display: flex;
+  flex: 1 0 auto;
+}
+
 .input-group input {
   border: none;
   margin-left: 1.5em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.input-group input:first-child {
+  flex: 1 0 10%;
+}
+
+.input-group input:last-child {
+  flex: 0 0 30%;
 }
 
 .input-group input:focus {
@@ -76,7 +87,16 @@ header h1 {
   text-transform: uppercase;
 }
 
-.input-group i {
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn i {
   background-color: #037678;
   width: 2.5em;
   line-height: 2.5em;
@@ -114,6 +134,10 @@ header h1 {
 
 .task:nth-child(even) .check-group label {
   color: #019499;
+}
+
+.task input:checked + label {
+  text-decoration: line-through;
 }
 
 .task .check-group label {
@@ -176,3 +200,4 @@ header h1 {
   margin-left: 0.5em;
   border-radius: 50%;
 }
+
