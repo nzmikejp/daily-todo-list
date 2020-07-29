@@ -11,7 +11,7 @@ class App extends Component {
 
         tasks: [{
             id: 1,
-            text: 'Watch the godfather 1',
+            text: 'Try to do some more React',
             date: 'Tue 6th March'
         }],
 
