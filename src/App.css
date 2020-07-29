@@ -147,6 +147,7 @@ header h1 {
 
 .task .task-date {
   font-size: 0.8em;
+  text-transform: capitalize;
 }
 
 .task:nth-child(odd) .task-date {
